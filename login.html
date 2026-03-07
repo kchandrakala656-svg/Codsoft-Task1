@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login | 10X Coding Ninjas</title>
+    <link rel="stylesheet" href="login.css">
+    <script defer src="login.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="left-side">
+        <h1>10X Coding Ninjas</h1>
+        <p>Empowering Innovation Through Code</p>
+    </div>
+
+    <div class="right-side">
+        <div class="login-card">
+            <h2>Login to Dashboard</h2>
+
+            <div class="input-group">
+                <input type="text" id="username" required>
+                <label>Username</label>
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="password" required>
+                <label>Password</label>
+                <span class="toggle" onclick="togglePassword()">👁</span>
+            </div>
+
+            <select id="role">
+                <option value="admin">Admin</option>
+                <option value="student">Student</option>
+            </select>
+
+            <button onclick="login()">Login</button>
+
+            <p id="error"></p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
