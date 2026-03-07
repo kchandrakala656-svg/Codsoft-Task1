@@ -1,51 +1,153 @@
-*{
+
+:root {
+    --primary: #0e1a2b;
+    --secondary: #162b44;
+    --accent: #00c2a8;
+    --light: #f4f7fb;
+    --white: #ffffff;
+    --gray: #6b7280;
+}
+
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins',sans-serif;
     box-sizing: border-box;
 }
-.container{
-    width: 100%;
-    height: 100%;
-    background-color: rgb(204, 242, 249) ;
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--light);
+    color: var(--primary);
+    line-height: 1.6;
+}
+
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+header {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: var(--white);
+    padding: 100px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+header button {
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: var(--accent);
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+header button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 194, 168, 0.4);
+}
+.team h2 {
+    margin-bottom: 50px;
+    font-size: 32px;
+}
+
+.card {
+    background: var(--white);
+    width: 270px;
+    padding: 25px;
+    margin: 15px;
+    display: inline-block;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+.card img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--accent);
+    margin-bottom: 15px;
+}
+
+.role {
+    font-weight: 600;
+    color: var(--accent);
+    margin: 10px 0;
+}
+.inauguration {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
     display: flex;
-    align-items: center;
     justify-content: center;
 }
-.Calculator{
-    background-color: rgb(229, 49, 160);
-    padding: 10px;
-    border-radius: 20px;
-}
-.Calculator form input{
-    border: 0;
-    outline: 0;
-    width: 50px;
-    height: 40px;
-    border-radius: 10px;
-    box-shadow: -8px -8px 15px rgba(202, 174, 216, 0.1),5px 5px 15px rgba(0,0,0,0.2);
-    background-color: rgb(240, 168, 211);
-    font-size: 20px;
-    color: #0b0b08;
-    cursor: pointer;
-    margin: 20px;
 
+.inauguration-container {
+    position: relative;
+    width: 85%;
+    max-width: 900px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
 }
-form .display{
-    display: flex;
-    justify-content: flex-end;
-    margin: 20px 0;
-    border-radius: 10px;
+
+.inauguration-container img {
+    width: 100%;
+    transition: 0.6s ease;
 }
-form .display input{
-    text-align: right;
-    flex: 1;
-    font-size: 45px;
-    box-shadow: 10px;
+
+.inauguration-container:hover img {
+    transform: scale(1.08);
 }
-form input.equal{
-    width: 145px;
+
+.inaug-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 40px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    color: white;
 }
-form input.operator{
-    color: #de05ab;
+
+.events {
+    background: var(--white);
+}
+
+.event-card {
+    background: var(--light);
+    margin: 25px auto;
+    padding: 25px;
+    width: 60%;
+    border-radius: 12px;
+    transition: 0.3s ease;
+    border-left: 6px solid var(--accent);
+}
+
+.event-card:hover {
+    transform: scale(1.02);
+}
+
+.contact {
+    background: var(--secondary);
+    color: var(--white);
+}
+
+.contact p {
+    margin: 10px 0;
 }
