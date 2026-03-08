@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Arial;
+    background-color:#e8a9f0;
+}
+.projects-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+padding:50px;
+}
+h1{
+    text-align: center;
+}
+header{
+     background-color: rgb(99, 5, 110);
+    font-size: 20px;
+    padding: 30px;
+    color: white;
+}
+.project-box{
+width:200px;
+padding:30px;
+border: rgb(21, 15, 22);
+border-radius:20px;
+text-align:center;
+background: #f4eaf7;
+border-radius: 20%;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+h3{
+    text-align: center;
+    font-family: 'Lucida Sans';
+    padding-bottom: 20px;
+}
+h3:hover{
+    text-decoration: underline;
+    color: #680b85;
+    text-decoration-color:#680b85;
+}
